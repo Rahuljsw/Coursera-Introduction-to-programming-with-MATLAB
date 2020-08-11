@@ -1,3 +1,25 @@
+%% Question 1
+__________________________________________________________________________________________________________________________
+Write a function called minimax that takes M, a matrix input argument and returns mmr, a row vector contai
+minimum valued elements in each row. As a second output argument called mmm, it provides the difference
+the code below for an example:
+
+>> A = randi(100,3,4)
+A =
+ 66 94 75 18
+ 4 68 40 71
+ 85 76 66 4
+>> [x, y] = minimax(A)
+x =
+ 76 67 81
+y =
+ 90
+ ___________________________________________________________________________________________________________________________
+
+Ques: [mmr, mmm] = minimax([1:4;5:8;9:12])
+_____________________________________________________________________________________________________________________________
+Solution:
+
 %% without loop
 function [mmr, mmm] = minimax(M)
 [m,n] = size(M);
@@ -13,6 +35,4 @@ end
 %end
 %mmm =  max(max(M))-min(min(M));
 %end
-
-%% Question
-[mmr, mmm] = minimax([1:4;5:8;9:12])
+=================================================================================================================================
